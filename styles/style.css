@@ -1,0 +1,137 @@
+
+/*PROYECTO BASADO EN EL EMPRENDIMIETO DE UN AMIGO, NO QUERIA COPIAR PAGINA , 
+SI NO PRACTICAR TRATO Y GUSTOS DE FUTURO CLIENTE*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    margin: 10px 10px;
+}
+figure img {
+    width: 15%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 120% ;
+}
+
+.section-welcome h1{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.section-welcome p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-welcome img {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    display: inline-block;
+    border: 1px solid cadetblue;
+    border-radius: 20px;
+}
+.section-welcome figure {
+    display: flex;
+    justify-content: space-between;
+}
+.link-principal {
+    text-decoration: none;
+    color: bisque;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    margin: 10px 40px;
+    border: 1px solid cadetblue;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content:space-around;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color:goldenrod;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+h2{
+    color: rgb(128, 84, 27);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+}
+h3{
+    color:rgb(141, 86, 18);
+    font-size: 20;
+    font-weight: 500;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin: 15px;
+}
+.article-galeria {
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    flex-wrap:wrap ;
+    border: 1px solid white;
+    justify-content: center;
+}
+.article-galeria img {
+    width: 100%;
+    align-items: center;
+   
+} 
+
+
+ul li {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+
+}
+.copyright {
+    color: aliceblue;
+    font-size: 15px;
+}
+
+#carouselExampleIndicators {
+    width: 50%;
+    border: 1px solid cadetblue;
+}
+
