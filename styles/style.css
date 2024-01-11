@@ -9,6 +9,7 @@ body {
     background-color: black;
     margin: 15px 15px;
 }
+
 figure img {
     width: 15%;
 }
@@ -43,7 +44,7 @@ nav ul {
     flex-direction:row ;
     flex-wrap: wrap;
     display: inline-block;
-    border: 1px solid cadetblue;
+    border: 2px solid cadetblue;
     border-radius: 20px;
 }
 .section-welcome figure {
@@ -57,9 +58,12 @@ nav ul {
     display: flex;
     justify-content: center;
     margin: 10px 40px;
-    border: 1px solid cadetblue;
+    border: 2px solid cadetblue;
     padding: 10px 20px;
     border-radius: 20px;
+}
+a:active {
+    color: antiquewhite;
 }
 
 .menu{
@@ -67,8 +71,8 @@ nav ul {
     justify-content:space-around;
 }
 .logo{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
 h1 {
@@ -134,7 +138,7 @@ ul li {
 
 #carouselExampleIndicators {
     width: 80%;
-    border: 1px solid cadetblue;
+    border: 2px solid cadetblue;
     margin-left: 120px;
     
 }
@@ -142,6 +146,7 @@ ul li {
     display: flex;
     justify-content: center;
     padding: 10px;
+    text-decoration: none;
 }
 .parrafo-carrusel {
     display: flex;
