@@ -7,7 +7,11 @@ SI NO PRACTICAR TRATO Y GUSTOS DE FUTURO CLIENTE*/
 }
 body {
     background-color: black;
-    margin: 15px 15px;
+}
+
+.logo-conteiner {
+    background-color: black;
+    
 }
 
 figure img {
@@ -23,7 +27,10 @@ nav ul {
     color: white;
     font-size: 120% ;
 }
-
+.section-welcome{
+    background-color: rgb(20, 76, 141);
+    border: 1px solid cadetblue;
+}
 .section-welcome h1{
 
    display: flex;
@@ -62,13 +69,13 @@ nav ul {
     padding: 10px 20px;
     border-radius: 20px;
 }
-a:active {
-    color: antiquewhite;
-}
 
-.menu{
+
+.menu-conteiner{
     display: flex;
     justify-content:space-around;
+    background-color: rgb(30, 21, 82);
+    border: 1px solid cadetblue;
 }
 .logo{
   display: flex;
@@ -102,7 +109,7 @@ p {
     display: flex;
     justify-content: center;
     display: inline-block;
-    color: goldenrod;
+    color: rgb(230, 226, 217);
     font-size: 20px;
     font-weight: 200;
     text-align: center;
@@ -139,20 +146,27 @@ ul li {
 #carouselExampleIndicators {
     width: 80%;
     border: 2px solid cadetblue;
-    margin-left: 120px;
+    display: flex;
+    justify-content: center;
     
 }
 .redes-sociales {
     display: flex;
     justify-content: center;
     padding: 10px;
-    text-decoration: none;
 }
 .parrafo-carrusel {
     display: flex;
-    
+    background-color:rgb(30, 21, 82) ;
+    border: 1 px solid cadetblue;
 }
 .logo-final {
     margin-left: 500px;
     display: flex;
+}
+.img-fluid {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
 }
