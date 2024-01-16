@@ -67,6 +67,11 @@ nav ul {
     border: 2px solid cadetblue;
     padding: 10px 20px;
     border-radius: 20px;
+
+}
+.link-principal:hover{
+    color: rgb(52, 67, 153);
+    background-color: cadetblue;
 }
 .images-principales {
     display: flex; 
@@ -74,8 +79,6 @@ nav ul {
     justify-content: space-evenly;
     
 }
-
-
 .menu-conteiner{
     display: flex;
     flex-flow: row wrap;
@@ -88,6 +91,7 @@ nav ul {
 .nav-conteiner {
     display: flex;
     flex-flow: row wrap;
+    ;
 
 }
 .logo{
@@ -98,7 +102,7 @@ nav ul {
 
 h1 {
     color:goldenrod;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 400;
     text-align: center;
     background-color: rgb(20, 76, 141);
@@ -304,7 +308,6 @@ ul li {
     background-color: cadetblue;
 }
 
-
 /*RESPONSIVE----------------------------*/
 
 /*Mobile°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
@@ -425,6 +428,9 @@ ul li {
 
 @media screen and (min-width:801px) {
     main h1 {
-        font-size: 50px;
+        font-size: 80px;
+    }
+    .encabezado {
+        font-size: 30px;
     }
 }
