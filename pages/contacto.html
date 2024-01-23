@@ -15,32 +15,99 @@
     <header>                                    <!--HEADER-->
         <figure class="logo-conteiner">
             <a href="../index.html" class="logo">
-            <img src="../images/logo-fusion.jpeg" alt="logo"> <!--imagen logo incio-->
+                <img class="img-logo" src="../images/logo-fusion.jpeg" alt="logo"> <!--imagen logo incio-->
             </a>
-        </figure>  
-
-        <nav class="menu-conteiner">
-            <ul class="nav-conteiner">
-                <li>
-                    <a href="../pages/contacto.html" class="link-principal">Contacto</a> <!--link-->
-                </li>
-                <li>
-                    <a href="../pages/galeria.html" class="link-principal">Galeria</a><!--link-->
-
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html" class="link-principal">Nosotros</a><!--link-->
-                </li>
-                <li>
-                    <a href="../pages/presupuesto.html" class="link-principal">Presupuesto</a><!--link-->
-                </li>
-            </ul>
-        </nav>
+        </figure>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="../pages/presupuesto.html">Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        
         
     </header>
 
     <main>
-        <h1> Contacto!</h1>
+        <h1>Contacto!</h1>
+        <section class="formulario-contenedor">
+
+            <div class="contact-form">
+
+                <div class="formulario">
+                    <h3>Escríbenos y en breve nos pondremos en contacto:</h3>
+            
+                    <form action="submeter-formulario.php" method="post">
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                               <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+            
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+            
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>
+    
+            
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>
+            
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                        </p>
+            
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+            
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+            
+                    </form>
+                </div>
+            </div>
+
+            <p class="parrafo-form">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut iste harum, et accusantium totam officiis perferendis incidunt eius ipsam! Aperiam adipisci ad sed provident rem, quas eius cumque natus? Corporis.
+            Veniam voluptatibus commodi suscipit exercitationem non repudiandae alias maxime praesentium quisquam velit numquam, consectetur animi tempora aliquam perferendis eaque rem voluptas deleniti fuga cupiditate explicabo dolorum, minima dicta sapiente. Aut!
+            Consequuntur provident ducimus saepe, harum possimus, est ab, nostrum natus dolore corrupti necessitatibus delectus repellendus quis quia ut tenetur eligendi quas cum illo quos voluptate. Doloribus dolores quidem quam accusantium.
+            Dolores necessitatibus nam velit quod consequuntur, quia soluta error quam odit natus, expedita sed, at illum blanditiis enim. Distinctio nostrum a repellendus dignissimos magni perferendis officia, laborum illo? Illum, ducimus?</p>
+
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        
         <div class="info-contacto">
             <h3>Telefonos</h3>
             <p>gerardo: 1234567 | esteban:12345567</p>
@@ -53,12 +120,12 @@
             <h3>instagram</h3>
             <p>@fusion.instalaciones</p>
         </div>
- 
 
+        <section class="iframe-conteiner">
+            <iframe class="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/QmMUexp-J2Y?si=9bvjESKWmEe1xhKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110262.2437562301!2d-60.680844171881695!3d-32.961492360391006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1705104000942!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
-
-    </main>
-    <footer>                                    <!--FOOTER-->
         <article class="redes-sociales">
             <a href="" > <!--link instagram cliente-->
 
@@ -94,26 +161,14 @@
         <h3>Horarios: Lunes a viernes de 7:00 a 16:00 hs</h3>
         
         <figure class="logo-final">
-            <a href="index.html">
-                <img src="../images/logo-fusion2.jpg" alt="" class="logo-final">
+            <a href="../index.html">
+                <img class="img-final" src="../images/logo-fusion2.jpg" alt="" >
             </a>
         </figure>
         <p class="copyright">copyright Aguirre Matias Ezequiel - todos los derechos reservados</p> <!--copyright-->
         
         
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

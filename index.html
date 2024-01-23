@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
 
     <!--CSS-->
     <link rel="stylesheet" href="styles/style.css">
@@ -17,27 +18,25 @@
     <header>                                    <!--HEADER-->
         <figure class="logo-conteiner">
             <a href="index.html" class="logo">
-                <img src="images/logo-fusion.jpeg" alt="logo"> <!--imagen logo incio-->
+                <img class="img-logo" src="images/logo-fusion.jpeg" alt="logo"> <!--imagen logo incio-->
             </a>
-        </figure>  
-
-        <nav class="menu-conteiner">
-            <ul class="nav-conteiner">
-                <li class="boton-links">
-                    <a href="pages/contacto.html" class="link-principal">Contacto</a> <!--link-->
-                </li>
-                <li class="boton-links">
-                    <a href="pages/galeria.html" class="link-principal">Galeria</a><!--link-->
-
-                </li>
-                <li class="boton-links">
-                    <a href="pages/nosotros.html" class="link-principal">Nosotros</a><!--link-->
-                </li>
-                <li class="boton-links">
-                    <a href="pages/presupuesto.html" class="link-principal">Presupuesto</a><!--link-->
-                </li>
-            </ul>
-        </nav>
+        </figure>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="pages/presupuesto.html">Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </nav> 
         
         
     </header>
@@ -47,10 +46,11 @@
             <h1>Bienvenidos!</h1>  
             <p class="encabezado">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Aliquam quod, commodi sed tempora cum ipsa minus amet exercitationem at obcaecati labore ducimus incidunt cupiditate, quia pariatur, ullam consectetur rerum? Commodi?
-            Perferendis provident nulla eveniet qui ipsa magnam amet, reprehenderit maxime,
-             vitae sed hic dolorum harum nesciunt, sit suscipit minus optio culpa pariatur? Illo, qui? Vitae facilis ea beatae distinctio tempora.
-            Ullam, alias. Ratione ullam dolorem in, eaque voluptas qui autem molestiae,
-             natus blanditiis sapiente cupiditate exercitationem ea doloremque consequuntur molestias ipsum rem vitae! Velit cupiditate iusto error? Doloribus, eum inventore!</p>
+                Perferendis provident nulla eveniet qui ipsa magnam amet, reprehenderit maxime,
+                vitae sed hic dolorum harum nesciunt, sit suscipit minus optio culpa pariatur? Illo, qui? Vitae facilis ea beatae distinctio tempora.
+                Ullam, alias. Ratione ullam dolorem in, eaque voluptas qui autem molestiae,
+                natus blanditiis sapiente cupiditate exercitationem ea doloremque consequuntur molestias ipsum rem vitae! Velit cupiditate iusto error? Doloribus, eum inventore!
+            </p>
             <figure class="images-principales">
                 <img class="img-index" src="images/galeria-4.jpg" alt="">
                 <img class="img-index" src="images/galeria-index.jpg" alt="">
@@ -93,15 +93,31 @@
             </div>
         </section>
 
-        <section class="iframe-conteiner">
-            <iframe class="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/QmMUexp-J2Y?si=9bvjESKWmEe1xhKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110262.2437562301!2d-60.680844171881695!3d-32.961492360391006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1705104000942!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        
         
     </main>
 
                                               
-    <footer>                                    <!--FOOTER-->
+    <footer>                                
+        <div class="info-contacto">
+            <h3>Telefonos</h3>
+            <p>gerardo: 1234567 | esteban:12345567</p>
+        </div>
+        <div class="info-contacto">
+            <h3>E-mail</h3>
+            <p>gerardo: gera@blabla.com | esteban:esteban@blabal.com</p>
+        </div>
+        <div class="info-contacto">
+            <h3>instagram</h3>
+            <p>@fusion.instalaciones</p>
+        </div>
+        
+        <section class="iframe-conteiner">
+            <iframe class="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/QmMUexp-J2Y?si=9bvjESKWmEe1xhKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110262.2437562301!2d-60.680844171881695!3d-32.961492360391006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1705104000942!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+                                            
+
         <article class="redes-sociales">
             <a href="" class="style-rs" > <!--link instagram cliente-->
 
@@ -137,7 +153,7 @@
         
         <figure class="logo-final">
             <a href="index.html">
-                <img class="logo-final" src="images/logo-fusion2.jpg" alt="" >
+                <img class="img-final" src="images/logo-fusion2.jpg" alt="" >
             </a>
         </figure>
         <p class="copyright">copyright Aguirre Matias Ezequiel - todos los derechos reservados</p> <!--copyright-->
