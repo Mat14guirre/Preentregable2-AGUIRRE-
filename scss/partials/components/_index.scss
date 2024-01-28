@@ -1,0 +1,276 @@
+body {
+    background-color: black;
+    font-family: "nunito" ;
+    
+}
+
+.logo-conteiner {
+    background-color: black;
+    @include flex(row, center ,center );
+    
+
+    .logo{
+
+        display: flex;
+        
+       
+        .img-logo {
+            display: flex;
+            width: 200px;
+        }
+    }
+}
+
+
+
+h1{
+    @include flex(row, center ,center );
+    flex-wrap: wrap;
+    color: map-get($colors, mostaza );
+    font-size: map-get($font-sizes, xl );
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0b0b13;
+    border-bottom: 3px solid map-get($colors, blanco );
+    padding: 10px
+    
+}    
+
+.section-welcome{
+    
+    background-color:$azul;
+    border: 1px solid map-get($colors, blanco );
+
+    .encabezado {
+        margin-top: 20px;
+        text-align: center;
+        color: map-get($colors, blanco );
+        font-size: map-get($font-sizes, m);
+        font-family: 'Courier New', Courier, monospace;
+        span {
+            color: map-get($colors,dorado);
+            font-style: italic;
+            font-weight: 600;
+        }
+        
+    }
+    .images-principales {
+        @include flex(row, space-evenly ,center );
+        flex-wrap: wrap;
+        
+        .img-index-centro {
+            @include medidas(500px,420px );
+            display: flex;
+            justify-content: space-around;
+            flex-direction:row ;
+            flex-wrap: wrap;
+            display: inline-block;
+            border: 2px solid map-get($colors, blanco );
+            border-radius: 20px;
+        }
+
+        
+
+        .img-index {
+            
+            @include medidas(400px,400px );
+            @include flex(row, space-around ,center );
+            flex-wrap: wrap;
+            display: inline-block;
+            border: 2px solid map-get($colors, blanco );
+            border-radius: 20px;
+        }
+        
+    }
+}
+
+.section-agua {
+    
+    background-color:$azul;
+    border: 1px solid map-get($colors, blanco );
+    p {
+        margin-top: 20px;
+        text-align: center;
+        color: map-get($colors, blanco );
+        font-size: map-get($font-sizes, m);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .images-gas-agua {
+        @include flex(row, space-evenly ,center );
+        flex-wrap: wrap;
+
+        .img-index-agua{
+            @include medidas(200px,200px );
+            display: flex;
+            justify-content: space-around;
+            flex-direction:row ;
+            flex-wrap: wrap;
+            display: inline-block;
+            border: 2px solid map-get($colors, blanco );
+            border-radius: 20px;
+        }
+        .img-index-agua-centro {
+            @include medidas(210px,210px );
+            @include flex(row, space-around ,center );
+            flex-wrap: wrap;
+            display: inline-block;
+            border: 2px solid map-get($colors, blanco );
+            border-radius: 20px;
+        }
+    }
+}
+
+.parrafo-carrusel{
+    @include flex(row,center,center );
+    background-color: $azul;
+    border: 1 px solid map-get($colors, blanco );
+    margin-top: 20px;
+    p {
+        text-align: center;
+        display: flex;
+        display: inline-block;
+        color: map-get($colors, blanco );
+        font-size: map-get($font-sizes, m );
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+h2 {
+    font-size: map-get($font-sizes, l );
+    font-weight: 100;
+    text-align: center;
+    color: map-get($colors, blanco ); 
+}
+
+
+.iframe-conteiner {
+    @include flex(row, space-evenly,center );
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color:$azul ;
+    border: 3px solid map-get($colors, blanco );
+
+    .iframe-video {
+        border: 1px solid map-get($colors, blanco );
+    }
+    .iframe-mapa {
+        border: 1px solid map-get($colors, blanco );
+    }
+}
+
+.list-footer {
+    background-color:$azul;
+    border: 1px solid cadetblue;
+    @include flex(row, center ,center );
+    flex-wrap: wrap;
+
+    ul li {
+        color:map-get($colors, blanco );
+        text-decoration: none;
+        
+    }
+}
+h3{
+    color: wheat;
+    font-size: 20;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    
+}
+.logo-final {
+    
+    display: flex;
+
+    .img-final {
+
+       width: 15%;
+    }
+}
+
+main {
+    background-color: $azul;
+    border: 3px solid map-get($colors, blanco );
+}
+
+.info-contacto {
+    @include flex(row, center ,center );
+    gap: 10px;
+    margin-top: 20px;
+
+    h3{
+        color: map-get($colors, celeste-claro );
+        font-size: 20;
+        font-weight: 500;
+        @include flex(row, center ,center );
+    }
+
+    p {
+        color: map-get($colors, dorado );
+        font-size: map-get($font-sizes, l );
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 200;
+    }
+   
+}
+.galeria-conteiner {
+    @include flex(row, center ,auto );
+    flex-wrap: wrap;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 400px 400px;
+    flex-wrap: wrap;
+
+    .image-galeria{
+        margin: 10px;
+        border: 2px solid map-get($colors, blanco);
+        border-radius: 5px;
+        .img-grid {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.sobre-nosotros {
+    h2 {
+        color:map-get($colors,azul-claro );
+        font-size: 35px;
+    }
+    p {
+        color: #a8a8a8;
+        font-size:$main-size ;
+    }
+}
+
+.images-nosotros-conteiner {
+    @include flex(row, space-around,center );
+    flex-wrap: wrap;
+    
+    .images-nosotros {
+        @include medidas(400px,400px );
+        border-radius: 20px;
+        border: 1px solid map-get($colors, blanco );
+        margin: 20px;
+
+    }
+}
+
+.img-presupuesto{
+    @include flex(row, center ,center );
+
+    .image-fondo-presupuesto {
+        border-radius: 10px;
+        border: 2px solid map-get($colors, blanco );
+        @include medidas(600px,500px );
+        margin: 20px;
+    }
+}
+
+.copyright {
+    color: map-get($colors, blanco );
+    font-size: 15px;
+    display: flex;
+}

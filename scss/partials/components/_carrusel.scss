@@ -1,0 +1,21 @@
+// CARRUSEL
+
+.carrusel-conteiner {
+    @include flex(row, center ,center );
+    background-color:  $azul;
+    border: 1px solid map-get($colors, blanco );
+    margin-top: 40px;
+
+    .carousel .slide {
+        width: 80%;
+        border: 2px solid cadetblue;
+        @include flex(row, center ,center );
+        .carousel-indicators {
+            @include flex(row, center ,center );
+            border: 1px solid map-get($colors, blanco );
+        }
+        
+
+    }
+
+}

@@ -1,0 +1,17 @@
+// BUTTONS
+
+.redes-sociales {
+    @include flex(row, center ,center );
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
+    .style-rs {
+        text-decoration: none;
+        color: map-get($colors, celeste-claro );
+        padding: 10px;
+        &:hover {
+            background-color: map-get($colors , azul-claro );
+            border-radius: 10px;
+        }
+    }
+}

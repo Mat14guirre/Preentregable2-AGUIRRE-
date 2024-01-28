@@ -1,0 +1,136 @@
+.formulario-contenedor {
+    display: flex;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+    .contact-form{	
+        display: flex;
+        display:grid;
+        width: 560px; 
+        height: auto;
+        margin: 80px auto;
+        border-radius: 30px;  
+        padding-top: 30px;
+        padding-bottom: 20px;  
+        background-color: map-get($colors, blanco ); 
+        padding-left: 60px; 
+    
+        .formulario {
+            display: grid;
+            
+            h3{
+                font-size: 25px; 
+                padding-bottom: 30px;
+                color: #19171f;   
+            }
+    
+            p{
+                font-size: 14px; 
+                color: #0e0e0e; 
+            }
+            input{
+                background-color:map-get($colors, blanco ); 
+                width: 408px; 
+                height: 40px; 
+                border-radius: 5px;  
+                border-style: solid; 
+                border-width: 3px; 
+                border-color: map-get($colors, celeste ); 
+                margin-top: 10px;  
+                padding-left: 10px;
+                margin-bottom: 20px; 
+            }
+            
+            
+            textarea{
+            
+                background-color: map-get($colors, blanco ); 
+                width: 405px; 
+                height: 150px; 
+                border-radius: 5px;  
+                border-style: solid; 
+                border-width: 2px; 
+                border-color: map-get($colors,azul-claro); 
+                margin-top: 10px;  
+                padding-left: 10px;
+                margin-bottom: 20px; 
+                padding-top: 15px; 
+            }
+            
+            
+            label{
+            
+                display: block; 
+                float: center; 	
+            }
+            
+            
+            button{
+                height: 45px; 
+                padding-left: 5px;
+                padding-right: 5px; 	
+                margin-bottom: 20px; 
+                margin-top: 10px; 	
+                text-transform: uppercase;
+                background-color: map-get($colors ,azul-fuerte ); 
+                border-color: map-get($colors, azul ); 
+                border-style: solid; 
+                border-radius: 10px;	
+                width: 420px; 
+                p{
+                    color: map-get($colors, blanco ); 
+                }  
+                
+            }
+            
+            span{
+                color: map-get($colors, azul-claro ); 
+            }
+            
+            
+            .aviso{
+                font-size: 13px;  
+                color: #0e0e0e;  
+            }
+            
+            
+            h1{
+                font-size: 40px;  
+                text-align: letf;  
+                color: map-get($colors, dorado );
+            }
+            
+            ::-webkit-input-placeholder {
+             color: #a8a8a8;
+            }
+            
+            
+            ::-webkit-textarea-placeholder {
+             color: #a8a8a8;
+            }
+            
+            
+            .formulario input:focus{
+                outline:0;
+                border: 2px solid #020318;
+            }
+            
+            
+            .formulario textarea:focus{
+                outline:0;
+                border: 2px solid #141f07;
+            }
+            
+        }
+    }
+    .parrafo-form {
+        text-align: center;
+        font-size:  20px;
+        font-weight: 20px;
+        color: map-get($colors, blanco );
+        margin-bottom: 20px;
+    }
+     
+
+}
