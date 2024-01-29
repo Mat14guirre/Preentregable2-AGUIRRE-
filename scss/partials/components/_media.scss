@@ -25,7 +25,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 300px);
         border: 3px solid rgb(66, 75, 196);
-        
     }
     
     .logo-conteiner {
@@ -150,19 +149,19 @@
         }
         p {
             color: map-get($colors, blanco);
-            font-size: map-get($font-sizes, xl ) ;
+            font-size: map-get($font-sizes, l ) ;
         }
     }
 
     .info-contacto {
         h3{
             color: map-get($colors, celeste-claro );
-            font-size: map-get($font-sizes, xl );
+            font-size: map-get($font-sizes, l );
         }
     
         p {
             color: map-get($colors, dorado );
-            font-size: map-get($font-sizes, xl );
+            font-size: map-get($font-sizes, l );
         }
        
     }
