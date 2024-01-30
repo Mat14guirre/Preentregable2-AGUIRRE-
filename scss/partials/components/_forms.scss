@@ -1,9 +1,9 @@
 .formulario-contenedor {
     display: flex;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     .contact-form{	
         display: flex;
         display:grid;
@@ -17,6 +17,7 @@
         padding-left: 60px; 
     
         .formulario {
+            display: flex;
             display: grid;
             
             h3{
@@ -44,7 +45,7 @@
             
             
             textarea{
-            
+                display: flex;
                 background-color: map-get($colors, blanco ); 
                 width: 405px; 
                 height: 150px; 
@@ -60,13 +61,14 @@
             
             
             label{
-            
+                display: flex;
                 display: block; 
                 float: center; 	
             }
             
             
             button{
+                display: inline-block;
                 height: 45px; 
                 padding-left: 5px;
                 padding-right: 5px; 	
@@ -85,17 +87,20 @@
             }
             
             span{
+                display: flex;
                 color: map-get($colors, azul-claro ); 
             }
             
             
             .aviso{
+                display: flex;
                 font-size: 13px;  
                 color: #0e0e0e;  
             }
             
             
             h1{
+                display: flex;
                 font-size: 40px;  
                 text-align: letf;  
                 color: map-get($colors, dorado );
@@ -124,13 +129,5 @@
             
         }
     }
-    .parrafo-form {
-        text-align: center;
-        font-size:  20px;
-        font-weight: 20px;
-        color: map-get($colors, blanco );
-        margin-bottom: 20px;
-    }
-     
-
+   
 }

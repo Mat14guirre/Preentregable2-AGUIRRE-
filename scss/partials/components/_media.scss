@@ -2,25 +2,106 @@
 
 /*Mobile°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 @media only screen and (max-width:500px) {
+    
     h1{
         font-size: map-get($font-sizes,m );
     }
+
     p {
         font-size: map-get($font-sizes,s)
     }
+    
+    .parrafo-carrusel{
+        p {
+            font-size: map-get($font-sizes, s );
+            span {
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+    .section-agua{
+        .encabezado {
+            
+            margin-top: 15px;
+            font-size: map-get($font-sizes, s);
+        }
+    }
+
+    .sobre-nosotros {
+        h2 {
+            color:map-get($colors, blanco);
+            font-size: map-get($font-sizes, m);
+        }
+        p {
+            color: map-get($colors, blanco);
+            font-size: map-get($font-sizes, s) ;
+        }
+    }
+    .info-contacto {
+        h3{
+            color: map-get($colors, celeste-claro );
+            font-size: map-get($font-sizes, s );
+        }
+    
+        p {
+            color: map-get($colors, dorado );
+            font-size: map-get($font-sizes, s );
+        }
+       
+    }
+    .container-fluid{
+        .navbar-brand {
+            font-weight: 600;
+            font-size: map-get($font-sizes, m );
+        }
+    }
+
+    
+
     .section-welcome {
-        .images-principales{
+        .encabezado {
+
+            margin-top: 15px;
+            font-size: map-get($font-sizes, s);
+            
+            span {
+                font-weight: 500;
+            }
+            
+        }
+
+        .images-principales{          
             .img-index{
-                width: 80%;
-                height: 80%;
+                width: 90%;
+                height: 90%;
+                
             }
             .img-index-centro {
-                width: 80%;
-                height: 80%;
+                width: 90%;
+                height: 90%;
+                
 
             }
         }
     }
+
+    .img-presupuesto{
+        
+        flex-wrap: wrap;
+        p{
+            font-weight: 100;
+            font-size: map-get($font-sizes, s);
+        }
+        
+        .image-fondo-presupuesto {
+    
+            @include medidas(400px,200px );
+            
+        }
+    }
+
     .galeria-conteiner {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 300px);
@@ -35,70 +116,15 @@
             }
         }
     }
-    .form-control {
-        color: blue;
-        height: 25px;
-        width: 230px;
-    }
-    .form-label {
-        color: rgb(246, 247, 244);
-        font-size: 16px;
-        width: 80px;
-    }
-    .sobre-nosotros {
-        h2 {
-            color:map-get($colors, mostaza );
-            font-size: map-get($font-sizes, s);
-        }
-        p {
-            color: map-get($colors, blanco);
-            font-size: map-get($font-sizes, s ) ;
-        }
-    }
-    .info-contacto {
-        h3{
-            color: map-get($colors, celeste-claro );
-            font-size: map-get($font-sizes, s );
-        }
-    
-        p {
-            color: map-get($colors, dorado );
-            font-size: map-get($font-sizes, s );
-        }
-       
-    }
-    
+
 }    
 
 /*Tablet°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
 @media only screen and (min-width:501px)and (max-width:800px) {
+
     h1{
         font-size: map-get($font-sizes,l );
-    }
-    p {
-        font-size: map-get($font-sizes,m )
-    }
-    .section-welcome {
-        .images-principales{
-            .img-index{
-                width: 100%;
-                height: 90%;
-            }
-            .img-index-centro {
-                width: 100%;
-                height: 90%;
-
-            }
-        }
-    }
-    
-    .encabezado {
-        font-size: 20px;
-    }
-    .galeria-conteiner {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px;
-        border: 1px solid white;
     }
     h2 {
         font-size: 20px;
@@ -106,10 +132,8 @@
     h3 {
         font-size: 16px;
     }
-    
-    
-    .redes-sociales a img {
-        width: 30%;
+    p {
+        font-size: map-get($font-sizes,m )
     }
 
     .sobre-nosotros {
@@ -119,9 +143,10 @@
         }
         p {
             color: map-get($colors, blanco);
-            font-size: map-get($font-sizes, l ) ;
+            font-size: map-get($font-sizes, m) ;
         }
     }
+    
     .info-contacto {
         h3{
             color: map-get($colors, celeste-claro );
@@ -135,7 +160,70 @@
        
     }
 
+    .section-agua{
+        .encabezado {
+            
+            margin-top: 15px;
+            font-size: map-get($font-sizes, s);
+        }
+    }
+    .container-fluid{
+        .navbar-brand {
+            font-weight: 700;
+            font-size: map-get($font-sizes, l );
+        }
+
+    }
+
+    .section-welcome {
+        .encabezado {
+
+            margin-top: 15px;
+            font-size: map-get($font-sizes, s);
+            
+            span {
+                font-weight: 500;
+            }
+            
+        }
+
+        .images-principales{
+            .img-index{
+                width: 100%;
+                height: 95%;
+            }
+            .img-index-centro {
+                width: 100%;
+                height: 95%;
+
+            }
+        }
+    }
+
+    .img-presupuesto{
+        flex-wrap: wrap;
+        p{
+            font-weight: 150;
+            font-size: map-get($font-sizes, m );
+        }
+        flex-wrap: wrap;
+        
+        .image-fondo-presupuesto {
     
+            @include medidas(500px,400px );
+            
+        }
+    }
+    
+    .galeria-conteiner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        border: 1px solid white;
+    }
+    
+    .redes-sociales a img {
+        width: 30%;
+    }
 }
 
 /*desktop°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
@@ -144,12 +232,12 @@
 
     .sobre-nosotros {
         h2 {
-            color:map-get($colors, mostaza );
-            font-size: map-get($font-sizes, xl );
+            color:map-get($colors, blanco );
+            font-size: map-get($font-sizes, l );
         }
         p {
             color: map-get($colors, blanco);
-            font-size: map-get($font-sizes, l ) ;
+            font-size: map-get($font-sizes, m ) ;
         }
     }
 
@@ -171,4 +259,5 @@
     p {
         font-size: map-get($font-sizes,l )
     }
+
 }
