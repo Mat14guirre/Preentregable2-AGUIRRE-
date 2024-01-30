@@ -2,20 +2,19 @@
 
 .carrusel-conteiner {
     @include flex(row, center ,center );
-    background-color:  $azul;
-    border: 1px solid map-get($colors, blanco );
     margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 2px;
 
-    .carousel .slide {
-        width: 80%;
-        border: 2px solid cadetblue;
+    .carousel  {
+        width: 70%;
         @include flex(row, center ,center );
+        border: 5px solid rgb(43, 43, 85);
+        border-radius: 5px;
         .carousel-indicators {
             @include flex(row, center ,center );
-            border: 1px solid map-get($colors, blanco );
+            
         }
-        
-
     }
 
 }

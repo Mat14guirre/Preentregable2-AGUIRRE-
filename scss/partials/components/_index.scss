@@ -44,7 +44,6 @@ h1{
 
 .section-welcome{
     
-    background-color:$azul;
     border: 1px solid map-get($colors, blanco );
 
     .encabezado {
@@ -101,7 +100,6 @@ h1{
 
 .section-agua {
     
-    background-color:$azul;
     border: 1px solid map-get($colors, blanco );
     p {
         margin-top: 20px;
@@ -146,7 +144,6 @@ h1{
 
 .parrafo-carrusel{
     @include flex(row,center,center );
-    background-color: $azul;
     border: 1 px solid map-get($colors, blanco );
     margin-top: 20px;
     p {
@@ -173,7 +170,8 @@ h2 {
     color: map-get($colors, blanco ); 
     background-color: map-get($colors,azul-clasico );
     border: 1px solid map-get($colors, dorado );
-    margin: 15px;
+    margin-top:40px;
+    margin-bottom: 40px;
     padding: 10px;
     position: sticky
 }
@@ -238,6 +236,9 @@ h3{
     margin-top: 20px;
     background-image: linear-gradient(to left, black, rgb(59, 54, 54));
     border: 1px solid white;
+    &:hover {
+        transform: translate(10px,-2px);
+    }
 
     h3{
         color: map-get($colors, celeste-claro );
@@ -273,6 +274,11 @@ h3{
         .img-grid {
             height: 100%;
             width: 100%;
+            &:hover {
+                transform: scale(1.2);
+                border: 4px solid map-get($colors, mostaza );
+                border-radius: 5px;
+            }
         }
     }
 }
@@ -316,25 +322,32 @@ h3{
 }
 
 .img-presupuesto{
-    @include flex(row, center ,center );
-    p{
-        color: map-get($colors, mostaza );
-        font-weight: 200;
-        font-size: map-get($font-sizes, l );
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    
 
     .image-fondo-presupuesto {
         display: flex;
         border-radius: 10px;
         border: 2px solid map-get($colors, blanco );
-        @include medidas(600px,500px );
+        @include medidas(500px,500px );
         margin: 20px;
         &:hover {
             border: 4px solid map-get($colors, mostaza);
         }
     }
+    p{
+        color: map-get($colors, blanco );
+        font-weight: 200;
+        font-size: map-get($font-sizes, l );
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
 }
+
+
 
 .copyright {
     color: map-get($colors, blanco );

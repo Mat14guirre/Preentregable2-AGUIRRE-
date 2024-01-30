@@ -98,7 +98,6 @@ h1 {
 }
 
 .section-welcome {
-  background-color: rgb(20, 76, 141);
   border: 1px solid rgb(250, 250, 250);
 }
 .section-welcome .encabezado {
@@ -153,7 +152,6 @@ h1 {
 }
 
 .section-agua {
-  background-color: rgb(20, 76, 141);
   border: 1px solid rgb(250, 250, 250);
 }
 .section-agua p {
@@ -207,7 +205,6 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(20, 76, 141);
   border: 1 px solid rgb(250, 250, 250);
   margin-top: 20px;
 }
@@ -233,7 +230,8 @@ h2 {
   color: rgb(250, 250, 250);
   background-color: rgb(20, 76, 141);
   border: 1px solid goldenrod;
-  margin: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 10px;
   position: sticky;
 }
@@ -301,6 +299,9 @@ h3 {
   background-image: linear-gradient(to left, black, rgb(59, 54, 54));
   border: 1px solid white;
 }
+.info-contacto:hover {
+  transform: translate(10px, -2px);
+}
 .info-contacto h3 {
   color: rgb(42, 151, 179);
   font-size: 20;
@@ -341,6 +342,11 @@ h3 {
   height: 100%;
   width: 100%;
 }
+.galeria-conteiner .image-galeria .img-grid:hover {
+  transform: scale(1.2);
+  border: 4px solid rgb(133, 96, 5);
+  border-radius: 5px;
+}
 
 .sobre-nosotros h2 {
   color: rgb(250, 250, 250);
@@ -378,26 +384,27 @@ h3 {
 
 .img-presupuesto {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-}
-.img-presupuesto p {
-  color: rgb(133, 96, 5);
-  font-weight: 200;
-  font-size: 24px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  flex-direction: row;
 }
 .img-presupuesto .image-fondo-presupuesto {
   display: flex;
   border-radius: 10px;
   border: 2px solid rgb(250, 250, 250);
-  width: 600px;
+  width: 500px;
   height: 500px;
   margin: 20px;
 }
 .img-presupuesto .image-fondo-presupuesto:hover {
   border: 4px solid rgb(133, 96, 5);
+}
+.img-presupuesto p {
+  color: rgb(250, 250, 250);
+  font-weight: 200;
+  font-size: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .copyright {
@@ -411,24 +418,24 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(20, 76, 141);
-  border: 1px solid rgb(250, 250, 250);
   margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 2px;
 }
-.carrusel-conteiner .carousel .slide {
-  width: 80%;
-  border: 2px solid cadetblue;
+.carrusel-conteiner .carousel {
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 5px solid rgb(43, 43, 85);
+  border-radius: 5px;
 }
-.carrusel-conteiner .carousel .slide .carousel-indicators {
+.carrusel-conteiner .carousel .carousel-indicators {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(250, 250, 250);
 }
 
 .formulario-contenedor {
@@ -621,7 +628,7 @@ h3 {
     font-size: 14px;
   }
   .img-presupuesto .image-fondo-presupuesto {
-    width: 400px;
+    width: 300px;
     height: 200px;
   }
   .galeria-conteiner {
