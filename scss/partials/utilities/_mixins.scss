@@ -9,3 +9,8 @@
     justify-content: $justify ;
     align-items: $align;
 }
+@mixin fuente ($medida,$tipo,$fuente ) {
+    font-size: $medida;
+    font-style: $tipo;
+    font-family:$fuente;
+}
