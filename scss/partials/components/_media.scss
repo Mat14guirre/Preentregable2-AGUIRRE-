@@ -117,14 +117,44 @@
         }
     }
     .formulario-contenedor {
-        width: 30px;
+        width: 100%;
+        
         
         .contact-form {
-            width: 50px;
-            
+            width: 100%;
+            flex-wrap: wrap;
+            padding-left: 25px;
             
             .formulario {
-                width: 40px;
+                width: 100%;
+                h3{
+                    width: 200px;
+                    font-size: 15px; 
+                
+                }
+
+                input{
+                    
+                    width: 250px; 
+                    height: 35px; 
+                    margin-top: 10px;  
+                    padding-left: 2px;
+                    margin-bottom: 10px; 
+                }
+
+                textarea{ 
+                    width: 250px; 
+                    height: 100px; 
+                    margin-top: 10px;  
+                    padding-left: 2px;
+                    margin-bottom: 10px; 
+                    padding-top: 10px; 
+                }
+
+                button{
+                    	width: 100px; 
+                    
+                }
             
             }
         }

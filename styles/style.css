@@ -440,7 +440,6 @@ h3 {
 
 .formulario-contenedor {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -450,18 +449,18 @@ h3 {
 .formulario-contenedor .contact-form {
   display: flex;
   display: grid;
-  width: 100%;
-  height: 100%;
+  width: 528px;
+  height: auto;
   margin: 200px auto;
   border-radius: 30px;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 20px;
   background-color: rgb(250, 250, 250);
   padding-left: 60px;
 }
 .formulario-contenedor .contact-form .formulario {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   display: grid;
 }
@@ -508,6 +507,7 @@ h3 {
 .formulario-contenedor .contact-form .formulario button {
   display: inline-block;
   height: 45px;
+  width: 150px;
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 20px;
@@ -516,7 +516,6 @@ h3 {
   background-color: #3331d3;
   border-style: solid;
   border-radius: 10px;
-  width: 420px;
 }
 .formulario-contenedor .contact-form .formulario button p {
   color: rgb(250, 250, 250);
@@ -644,13 +643,37 @@ h3 {
     width: 100px;
   }
   .formulario-contenedor {
-    width: 30px;
+    width: 100%;
   }
   .formulario-contenedor .contact-form {
-    width: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 25px;
   }
   .formulario-contenedor .contact-form .formulario {
-    width: 40px;
+    width: 100%;
+  }
+  .formulario-contenedor .contact-form .formulario h3 {
+    width: 200px;
+    font-size: 15px;
+  }
+  .formulario-contenedor .contact-form .formulario input {
+    width: 250px;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 2px;
+    margin-bottom: 10px;
+  }
+  .formulario-contenedor .contact-form .formulario textarea {
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 2px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .formulario-contenedor .contact-form .formulario button {
+    width: 100px;
   }
 }
 /*Tablet°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
