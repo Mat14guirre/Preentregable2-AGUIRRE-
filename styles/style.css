@@ -219,7 +219,7 @@ h1 {
   margin-right: 20px;
 }
 .parrafo-carrusel p span {
-  color: black;
+  color: goldenrod;
   font-weight: 800;
 }
 
@@ -616,14 +616,22 @@ h3 {
     font-weight: 500;
   }
   .section-welcome .images-principales .img-index {
-    width: 90%;
-    height: 90%;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
   }
   .section-welcome .images-principales .img-index-centro {
-    width: 90%;
-    height: 90%;
+    display: none;
+  }
+  .section-agua .images-gas-agua .img-index-agua {
+    margin: 5px;
+  }
+  .section-agua .images-gas-agua .img-index-agua-centro {
+    display: none;
   }
   .img-presupuesto {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .img-presupuesto p {
@@ -632,7 +640,7 @@ h3 {
   }
   .img-presupuesto .image-fondo-presupuesto {
     width: 300px;
-    height: 200px;
+    height: 300px;
   }
   .galeria-conteiner {
     grid-template-columns: 1fr;

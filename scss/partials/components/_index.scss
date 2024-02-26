@@ -156,7 +156,7 @@ h1{
         margin-left: 20px;
         margin-right: 20px;
         span {
-            color: black;
+            color: map-get($colors,dorado);
             font-weight: 800;
         }
     }
