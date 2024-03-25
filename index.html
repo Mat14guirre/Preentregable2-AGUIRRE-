@@ -11,7 +11,13 @@
 
     <!-- ANIMATION CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+
+    <!-- AOS SCROLL EFECT -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SCRIPT DE AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Pagina de inicio | Fusion</title>
 </head>
 <!--este proyecto esta basado en el emprendimiento de un amigo,
@@ -19,7 +25,7 @@
 <body>
 
     <header>                                    <!--HEADER-->
-        <figure class="logo-conteiner">
+        <figure class="logo-conteiner animate__animated animate__backInLeft">
             <a href="index.html" class="logo">
                 <img class="img-logo" src="images/logo-fusion.jpeg" alt="aqui se encuentra el logo de nuestra empresa"> <!--imagen logo incio-->
             </a>
@@ -46,11 +52,11 @@
 
     <main>  <!--MAIN-->
         <div class="section-welcome">
-            <h1 class="animate__animated animate__flash">Bienvenidos a nuestro sitio</h1>  
+            <h1 class="animate__animated animate__rubberBand">Bienvenidos a nuestro sitio</h1>  
 
-            <p class="encabezado">Aqui encontraras lo que estas buscando: experiencia, calidad, compromiso y dedicacion. Trabajamos para tu comodidad, brindando servicios de <span>steel frame</span>, construccion en seco, construccion de <span>galerias y pergolas</span>, <span>instalaciones de gas y agua (reparaciones)</span>. En esta pagina encontras ademas nuestra forma de trabajar, galeria de imagenes con trabajos terminados, informacion sobre nosotros y nuestra forma de trabajar. Tambien encontraras formas de comunicarte con nosotros a traves de varios medios. Contamos con 10 años de experiencia en el rubro, brindando calidad, decorando hogares, remodelando y solucionando problemas con eficacia.
+            <p class="encabezado" data-aos="fade-up">Aqui encontraras lo que estas buscando: experiencia, calidad, compromiso y dedicacion. Trabajamos para tu comodidad, brindando servicios de <span>steel frame</span>, construccion en seco, construccion de <span>galerias y pergolas</span>, <span>instalaciones de gas y agua (reparaciones)</span>. En esta pagina encontras ademas nuestra forma de trabajar, galeria de imagenes con trabajos terminados, informacion sobre nosotros y nuestra forma de trabajar. Tambien encontraras formas de comunicarte con nosotros a traves de varios medios. Contamos con 10 años de experiencia en el rubro, brindando calidad, decorando hogares, remodelando y solucionando problemas con eficacia.
             </p>
-            <figure class="images-principales animate__animated animate__rubberBand">
+            <figure class="images-principales " data-aos="fade-down">
 
                 <img class="img-index" src="images/galeria-4.jpg" alt="galeria principal de casa vista desde lejos">
                 <img class="img-index-centro" src="images/obra-steel-frame-c.jpg" alt=" obra de stell frame desde cero">
@@ -61,25 +67,25 @@
 
         <div class="section-agua">
               
-            <p class="encabezado"> Profesionales especializados en instalaciones y reparaciones de tuberias de suministro de agua y gas, sistemas de drenaje y calefaccion. Trabajamos en complejos residenciales, comerciales ,hogares o en cualquier otra obra de urbanizacion.
+            <p class="encabezado" data-aos="fade-down-left"> Profesionales especializados en instalaciones y reparaciones de tuberias de suministro de agua y gas, sistemas de drenaje y calefaccion. Trabajamos en complejos residenciales, comerciales ,hogares o en cualquier otra obra de urbanizacion.
             </p>
             <figure class="images-gas-agua">
                 
-                <img class="img-index-agua" src="images/pergola-1.jpg" alt="imagen de una pergola de hierro">
-                <img class="img-index-agua" src="images/interior-4.jpg" alt="comedor de una casa, vista hacia la cocina">
+                <img class="img-index-agua" data-aos="fade-right" src="images/pergola-1.jpg" alt="imagen de una pergola de hierro">
+                <img class="img-index-agua" data-aos="fade-right" src="images/interior-4.jpg" alt="comedor de una casa, vista hacia la cocina">
                 <img class="img-index-agua-centro" src="images/steel-interior.jpg" alt="vista de interior de casa hacia la entrada con escalera principal">
-                <img class="img-index-agua" src="images/baño-7.jpg" alt="estilo de baño y sus griferias">
-                <img class="img-index-agua" src="images/galeria-interior.jpg" alt="comedor de casa con vista hacia patio y cocina">
+                <img class="img-index-agua" data-aos="fade-left" src="images/baño-7.jpg" alt="estilo de baño y sus griferias">
+                <img class="img-index-agua" data-aos="fade-left" src="images/galeria-interior.jpg" alt="comedor de casa con vista hacia patio y cocina">
                 
             </figure>       
         </div>
 
         <div class="parrafo-carrusel" >
-            <p >Contanos tu idea o proyecto y nosotros lo ponemos en marcha. Diseñamos a gusto del cliente. Colocacion de ceramicos, estructura de muebles e iluminacion son la base de ese toque moderno, y nosotros lo hacemos realidad.  Nuestro equipo en conjunto,maqueta , idea e <span>inicia tu casa desde 0.</span>
+            <p data-aos="fade-down-left">Contanos tu idea o proyecto y nosotros lo ponemos en marcha. Diseñamos a gusto del cliente. Colocacion de ceramicos, estructura de muebles e iluminacion son la base de ese toque moderno, y nosotros lo hacemos realidad.  Nuestro equipo en conjunto,maqueta , idea e <span>inicia tu casa desde 0.</span>
             </p>
         </div>
 
-        <section class="carrusel-conteiner">
+        <section class="carrusel-conteiner" data-aos="flip-right">
             <div id="carouselExampleIndicators" class="carousel slide">  <!--CARRUSEL-->
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -116,24 +122,18 @@
                                               
     <footer>                                
         
-        <div class="info-contacto">
+        <div class="info-contacto" data-aos="zoom-in-down">
             <h3>Telefonos|</h3>
             <p>Gerardo: +54 9 340 254-6449 | Esteban: +54 9 341 604-6695</p>
         </div>
-        <div class="info-contacto">
+        <div class="info-contacto"  data-aos="zoom-in-down"  >
             <h3>E-mail|</h3>
             <p>Gerardo: ventasdgf@hotmail.com | Esteban: kitomolineris@gmail.com</p>
         </div>
-        <div class="info-contacto">
+        <div class="info-contacto"  data-aos="zoom-in-down" >
             <h3>instagram|</h3>
             <p>@Fusion.instalaciones</p>
         </div>
-        
-        <section class="iframe-conteiner">
-            <iframe class="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/QmMUexp-J2Y?si=9bvjESKWmEe1xhKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110262.2437562301!2d-60.680844171881695!3d-32.961492360391006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1705104000942!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-                                            
 
         <article class="redes-sociales">
             <a href="https://www.instagram.com/fusion.instalaciones?igsh=MTF4aXZvZ3BnMGt0MQ" class="style-rs" > <!--link instagram cliente-->
@@ -179,6 +179,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

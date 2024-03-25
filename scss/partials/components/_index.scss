@@ -2,10 +2,10 @@ body {
     background-color: black;
     font-family: "nunito" ;
     
-    
 }
+
 main {
-    background-image:radial-gradient(ellipse 800px 800px , rgb(89, 89, 185), rgb(2, 2, 2))
+    background-image:radial-gradient(ellipse 800px 800px , rgb(4, 4, 78), rgb(2, 2, 2))
 }
 .logo-conteiner {
     background-color: black;
@@ -174,22 +174,6 @@ h2 {
     margin-bottom: 40px;
     padding: 10px;
     position: sticky
-}
-
-
-.iframe-conteiner {
-    @include flex(row, space-evenly,center );
-    flex-wrap: wrap;
-    margin-top: 10px;
-    background-color:$azul ;
-    border: 3px solid map-get($colors, blanco );
-
-    .iframe-video {
-        border: 1px solid map-get($colors, blanco );
-    }
-    .iframe-mapa {
-        border: 1px solid map-get($colors, blanco );
-    }
 }
 
 .list-footer {
